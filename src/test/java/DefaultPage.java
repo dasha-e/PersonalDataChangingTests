@@ -2,9 +2,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class DefaultPage {
-
-
-
     public void clickOnElement(WebDriver driver, String XPATH){
         int attempts = 0;
         while(attempts < 2) {
@@ -16,7 +13,6 @@ public class DefaultPage {
             attempts++;
         }
     }
-
 
     public boolean isElementHere(WebDriver driver, String XPATH){
         try{
