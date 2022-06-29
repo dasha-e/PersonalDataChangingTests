@@ -11,13 +11,10 @@ public class LoginPage extends DefaultPage{
         this.driver = driver;
     }
 
-
     public DefaultPage doLogin(String username, String password) {
         changeField(driver, LOGIN_LOCATOR, username);
         changeField(driver, PASSWORD_LOCATOR, password);
         clickOnElement(driver, SIGN_IN_LOCATOR);
         return new DefaultPage();
     }
-
 }
-
